@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class ResultComponent extends Component{
 
@@ -47,8 +48,14 @@ export default class ResultComponent extends Component{
 
 
                     <div className="resultsButton">
-                        <button className="rb again">PLAY AGAIN</button>
+                        <Link to="/quiz">
+                            <button className="rb again">PLAY AGAIN</button>
+                        </Link>
+                        
+                        <Link to="/">
                         <button className="rb backToHome">BACK TO HOME</button>
+                        </Link>
+                        
                     </div>
                 </div>
             </>
